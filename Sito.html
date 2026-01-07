@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Shop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Collega il file CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Negozio</a></li>
+                <li><a href="#cart">Carrello</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Benvenuto su Sport Shop!</h1>
+        <p>Acquista articoli sportivi per ogni necessità: magliette, scarpe, palloni e molto altro.</p>
+    </section>
+
+    <section id="shop">
+        <h2>I nostri prodotti</h2>
+        <div class="product">
+            <img src="maglietta.jpg" alt="Maglietta Sportiva">
+            <h3>Maglietta Sportiva</h3>
+            <p>Prezzo: €29.99</p>
+            <button onclick="addToCart('Maglietta Sportiva', 29.99)">Aggiungi al carrello</button>
+        </div>
+        <div class="product">
+            <img src="scarpe.jpg" alt="Scarpe da Calcio">
+            <h3>Scarpe da Calcio</h3>
+            <p>Prezzo: €69.99</p>
+            <button onclick="addToCart('Scarpe da Calcio', 69.99)">Aggiungi al carrello</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Carrello</h2>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Totale: €0.00</p>
+        <button onclick="proceedToCheckout()">Procedi al checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sport Shop</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Collega il file JavaScript -->
+</body>
+</html>
